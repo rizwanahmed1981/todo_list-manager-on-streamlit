@@ -1,82 +1,88 @@
-# To-Do List Manager (CLI)
+```markdown
+# TODO List Manager
 
-A simple command-line To-Do List Manager built with Python and Click, managed using **UV** package manager.
+A simple and efficient TODO List Manager built using Python, Streamlit, and Uvicorn. This application allows users to manage their daily tasks with ease, add, remove, and update tasks, all through an interactive and user-friendly interface.
 
-## Getting Started
+## Features
 
-### 1️⃣ Install UV
+- **Add Tasks**: Easily add new tasks to your list.
+- **Remove Tasks**: Delete tasks once they're completed or no longer needed.
+- **Update Tasks**: Mark tasks as complete or make changes to the task description.
+- **Task Persistence**: Tasks are saved even after the app is refreshed.
+- **Interactive UI**: Built using Streamlit for a simple and clean user experience.
 
-First, install **UV** (if not already installed):
+## Demo
 
-```sh
-curl -LsSf https://astral.sh/uv/install.sh | sh
+You can view the live demo or clone the repository to run the project locally. Check out the project in action at [TODO List Manager Demo](https://github.com/rizwanahmed1981/todo_list-manager-on-streamlit.git).
+
+## Installation
+
+To run this project locally, follow the steps below.
+
+### Prerequisites
+
+Ensure you have Python 3.7 or higher installed. You will also need to install the required dependencies.
+
+### Steps to Run the Project Locally
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/rizwanahmed1981/todo_list-manager-on-streamlit.git
+   ```
+
+2. Navigate into the project directory:
+   ```bash
+   cd todo_list-manager-on-streamlit
+   ```
+
+3. Install the required dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+4. Run the Streamlit app:
+   ```bash
+   streamlit run app.py
+   ```
+
+5. Once the app is running, open your browser and visit `http://localhost:8501` to use the TODO List Manager.
+
+## Technologies Used
+
+- **Python**: The backend programming language used to develop the logic of the application.
+- **Streamlit**: Used to create the user interface for this application.
+- **Uvicorn**: For running the application with ASGI support.
+
+## Project Structure
+
+```
+todo_list-manager-on-streamlit/
+│
+├── app.py             # The main Streamlit app file
+├── requirements.txt   # List of dependencies for the project
+└── README.md          # This file
 ```
 
-For Windows:
+## Contributing
 
-```sh
-powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
+Contributions are welcome! If you'd like to improve the project, please fork the repository and submit a pull request.
+
+## License
+
+This project is open-source and available under the [MIT License](LICENSE).
+
+## Contact
+
+Feel free to reach out to me for any questions or suggestions.
+
+Rizwan Ahmed  
+Founder, NovaNex Innovations  
+[Contact Email](mailto:razykan.ra@gmail.com)
+
 ```
 
-Verify installation:
-
-```sh
-uv --version
-```
-
----
-
-### 2️⃣ Create and Initialize the Project
-
-```sh
-uv init todo-cli
-cd todo-cli
-```
-
----
-
-### 3️⃣ Install Click (Dependency)
-
-```sh
-uv add click
-```
-
----
-
-### 4️⃣ Activate UV Virtual Environment (Windows)
-
-```sh
-.venv\Scripts\activate
-```
-
-For Linux/macOS:
-
-```sh
-source .venv/bin/activate
-```
-
----
-
-### 5️⃣ Run To-Do List Commands
-
-#### ➕ Add a New Task
-```sh
-uv run python todo.py add "Buy grocery for sehri and iftari"
-```
-
-#### 📜 List All Tasks
-```sh
-uv run python todo.py list
-```
-
-#### ✅ Mark a Task as Completed
-```sh
-uv run python todo.py complete 1
-```
-
-#### ❌ Remove a Task
-```sh
-uv run python todo.py remove 1
-```
-
-🎉 **That's it! Your To-Do CLI is ready to use.** 🚀
+### Notes:
+- Make sure you replace `"mailto:razykan.ra@gmail.com"` with your actual contact email.
+- The `requirements.txt` file should include the required dependencies such as `streamlit`, `uvicorn`, etc.
+  
+This `README.md` file includes installation instructions, features, and a description of the technologies used, making it easy for others to understand and run your project.
