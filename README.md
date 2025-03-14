@@ -42,7 +42,7 @@ Ensure you have Python 3.7 or higher installed. You will also need to install th
 
 4. Run the Streamlit app:
    ```bash
-   streamlit run app.py
+   streamlit run todo.py
    ```
 
 5. Once the app is running, open your browser and visit `http://localhost:8501` to use the TODO List Manager.
@@ -58,7 +58,8 @@ Ensure you have Python 3.7 or higher installed. You will also need to install th
 ```
 todo_list-manager-on-streamlit/
 │
-├── app.py             # The main Streamlit app file
+├── todo.py             # The main Streamlit app file
+├── functions.py             # The file that contains all the functions
 ├── requirements.txt   # List of dependencies for the project
 └── README.md          # This file
 ```
@@ -80,9 +81,3 @@ Founder, NovaNex Innovations
 [Contact Email](mailto:razykan.ra@gmail.com)
 
 ```
-
-### Notes:
-- Make sure you replace `"mailto:razykan.ra@gmail.com"` with your actual contact email.
-- The `requirements.txt` file should include the required dependencies such as `streamlit`, `uvicorn`, etc.
-  
-This `README.md` file includes installation instructions, features, and a description of the technologies used, making it easy for others to understand and run your project.
